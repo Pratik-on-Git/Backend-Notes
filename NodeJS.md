@@ -60,3 +60,16 @@ const http = require('http')
 * While installing `cat-me` we used `npm install cat-me` but we're not using any npm packages while running `http`
 
 **Reason**: `http` is a module, not a package.
+#### Server Creation: 
+```
+http.createServer()
+```
+#### Server Start: 
+```
+const server = http.createServer()
+
+server.listen(3000,()=>{
+  console.log("Server is running on port 3000")
+})
+```
+* The callback will get executed when the server is ready to take requests & handle it.
