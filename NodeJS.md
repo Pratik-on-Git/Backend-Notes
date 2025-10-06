@@ -73,3 +73,15 @@ server.listen(3000,()=>{
 })
 ```
 * The callback will get executed when the server is ready to take requests & handle it.
+#### Request & Response
+```
+const http = require('http')
+const server = http.createServer((req, res)=>{
+  res.end("hello World From The Server")
+})
+
+server.listen(3000,()=>{
+  console.log("Server is running on port 3000")
+})
+```
+* programming the server - if any request comes this will be the consistent response.
