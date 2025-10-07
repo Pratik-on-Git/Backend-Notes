@@ -85,3 +85,72 @@ server.listen(3000,()=>{
 })
 ```
 * programming the server - if any request comes this will be the consistent response.
+
+### Why We don't Use HTTP Server Directly?
+Node.js comes with a built-in `http` module, which lets you create a web server.
+
+✅ It Works fine for very basic servers.
+❌ But quickly becomes messy as you add more features like routes, middleware, JSON parsing, authentication, etc.
+
+### Express is a framework built on top of Node’s http module. 
+* It simplifies tasks that are cumbersome with raw `http`
+
+🔴 **Routing made easy**
+```
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => res.send('Hello World'));
+app.get('/about', (req, res) => res.send('About Page'));
+
+app.listen(3000, () => console.log('Server running'));
+
+```
+✅ Cleaner and scalable than multiple if conditions.
+
+🔴 **Middleware Support**: Express lets you use middleware for tasks like logging, parsing JSON, authentication.
+```
+app.use(express.json()); // automatically parses JSON requests
+```
+🔴 **Error Handling**: Express has built-in ways to handle errors globally, rather than manually checking in every callback.
+
+🔴 **Easier to integrate with templates, APIs, and databases**
+
+Express works seamlessly with EJS, Pug, or Handlebars and APIs like MongoDB or MySQL.
+
+🔴 **Large Ecosystem**: Many npm packages are designed to work with Express directly.
+
+#### Installation
+```
+npm init -y
+npm i express
+```
+**Express Server Running**
+```
+const express = require('express');
+const app = express();
+
+app.listen(3000,()=>{
+    console.log("Server is running on port 3000");
+})
+```
+This will show us an error on the screen - `Cannot GET \`
+Hence we'll do another step
+```
+const express = require('express');
+const app = express();
+
+app.get('/home',(req,res)=>{
+    res.end("Home Page");
+})
+app.get('/about',(req,res)=>{
+    res.end("About Page");
+})
+
+app.listen(3000,()=>{
+    console.log("Server is running on port 3000");
+})
+```
+
+Now in Terminal -`node server.js`
+will show us Home Page written in Webpage `http://localhost:3000/home`
