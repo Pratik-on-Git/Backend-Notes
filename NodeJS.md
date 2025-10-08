@@ -169,3 +169,24 @@ app.get('/user', (req, res) => {
   res.send('Request received');
 });
 ```
+| Part          | Description                    | Example                          |
+| ------------- | ------------------------------ | -------------------------------- |
+| `req.body`    | Data sent in POST/PUT requests | `{ username: "pratik" }`         |
+| `req.query`   | Data from URL query string     | `/user?age=22` → `{ age: "22" }` |
+| `req.params`  | Data from route parameters     | `/user/10` → `{ id: "10" }`      |
+| `req.headers`, `req.cookies` | Metadata (Credentials) about the request     | Authorization, Content-Type      |
+
+### Response (res)
+Object your server uses to send data back to the client after processing their request.
+```
+app.get('/hello', (req, res) => {
+  res.send('Hello, Client!');         // Sends a plain text response
+});
+```
+| Method           | Purpose                                     | Example                             |
+| ---------------- | ------------------------------------------- | ----------------------------------- |
+| `res.send()`     | Sends text, HTML, or JSON automatically     | `res.send('Welcome!')`              |
+| `res.json()`     | Sends a JSON response                       | `res.json({ success: true })`       |
+| `res.status()`   | Sets HTTP status code                       | `res.status(404).send('Not Found')` |
+| `res.redirect()` | Redirects client to another URL             | `res.redirect('/login')`            |
+| `res.render()`   | Renders a template (used with view engines) | `res.render('index', { user })`     |
