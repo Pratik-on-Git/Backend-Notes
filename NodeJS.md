@@ -14,7 +14,7 @@ But Node.js lets you run JavaScript on your computer/server, so you can build ba
 - Runs JavaScript code outside the browser.
 - Built on Chrome's V8 Engine. (Made with C++)
 
-### **Who Created Node.js and Why?**
+### 🏗️ **Who Created Node.js and Why?**
 - **Created by**: Ryan Dahl  
 - **Released in**: 2009 (initial work started in 2007)
 - **Reason**:
@@ -37,7 +37,7 @@ But Node.js lets you run JavaScript on your computer/server, so you can build ba
   - `http` (server creation)
   - `path`, etc.
 
-### **Packages in Node.js**
+### 📦 **Packages in Node.js**
 - **Packages** are reusable libraries or tools.
 - Installed using **npm (Node Package Manager)**.
 - Example:
@@ -45,14 +45,14 @@ But Node.js lets you run JavaScript on your computer/server, so you can build ba
   npm install cat-me
   ```
 
-### **Packages vs Modules**
+### ☯️ **Packages vs Modules**
 | Feature     | Package                           | Module                        |
 |-------------|-----------------------------------|-------------------------------|
 | Definition  | Third-party tools/libraries       | Built-in features provided by Node.js |
 | Source      | Installed via `npm`               | Comes with Node.js            |
 | Examples    | `express`, `cat-me`               | `http`, `fs`, `path`          |
 
-### Server Create Through HTTP Module
+### 🖥️ Server Create Through HTTP Module
 * Make a file named `server.js`
 ```
 const http = require('http')
@@ -86,7 +86,7 @@ server.listen(3000,()=>{
 ```
 * programming the server - if any request comes this will be the consistent response.
 
-### Why We don't Use HTTP Server Directly?
+### 🔴 Why We don't Use HTTP Server Directly?
 Node.js comes with a built-in `http` module, which lets you create a web server.
 
 ✅ It Works fine for very basic servers.
@@ -155,7 +155,7 @@ app.listen(3000,()=>{
 Now in Terminal -`node server.js`
 will show us Home Page written in Webpage `http://localhost:3000/home`
 
-### Request (req)
+### 🙏 Request (req)
 The Incoming Data from the client in a web server context. Object containing details of client requests.
 * Whenever a client (like a browser, app, or API consumer) sends a request to your server, all the details about that request are contained inside the req object.
 
@@ -176,7 +176,7 @@ app.get('/user', (req, res) => {
 | `req.params`  | Data from route parameters     | `/user/10` → `{ id: "10" }`      |
 | `req.headers`, `req.cookies` | Metadata (Credentials) about the request     | Authorization, Content-Type      |
 
-### Response (res)
+### 👍 Response (res)
 Object your server uses to send data back to the client after processing their request.
 ```
 app.get('/hello', (req, res) => {
@@ -190,3 +190,45 @@ app.get('/hello', (req, res) => {
 | `res.status()`   | Sets HTTP status code                       | `res.status(404).send('Not Found')` |
 | `res.redirect()` | Redirects client to another URL             | `res.redirect('/login')`            |
 | `res.render()`   | Renders a template (used with view engines) | `res.render('index', { user })`     |
+
+### 📢 What is an API?
+API (Application Programming Interface) is a set of rules and definitions that allows two software applications to communicate or interact with each other.
+
+An API acts like a messenger - it takes a request from one application, tells another application what it needs to do, and then returns the response back.
+
+* It allows one software to request data or services from another.
+* How the communication happens doesn't matter - no strict rules or structure needed.
+
+🧩 Example:
+1. When your weather app fetches current temperature — it’s calling a `Weather API`.
+2. When you log in with Google on another site — that site uses `Google’s API` to verify your account.
+
+### 🌐 What is a REST API?
+
+REST (Representational State Transfer) is a set of architectural principles for designing web APIs that allow communication between client and server using standard HTTP methods.
+
+* A type of API that follows specific rules and guidelines for communication.
+
+So, a REST API is an API that follows REST principles to handle requests and responses in a consistent, predictable way.
+
+#### ⚙️ Key Characteristics:
+* Uses HTTP Methods:
+    * GET → Retrieve data
+    * POST → Create new data
+    * PUT → Update existing data
+  * DELETE → Remove data
+
+* Each request is independent - the server doesn’t remember previous requests.
+* Uses URLs to represent resources:
+    * Example:
+    
+    `/users` → all users
+
+    `/users/1` → user with ID 1
+
+* Structured Data Format: Usually exchanges data in JSON (sometimes XML).
+
+#### 💡 Example:
+
+* Client → “GET `/users/1`”
+* Server → { "id": 1, "name": "Pratik" }
