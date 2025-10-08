@@ -154,3 +154,18 @@ app.listen(3000,()=>{
 
 Now in Terminal -`node server.js`
 will show us Home Page written in Webpage `http://localhost:3000/home`
+
+### Request (req)
+The Incoming Data from the client in a web server context. Object containing details of client requests.
+* Whenever a client (like a browser, app, or API consumer) sends a request to your server, all the details about that request are contained inside the req object.
+
+**“The data of whatever client has requested” = req object in backend.**
+```
+app.get('/user', (req, res) => {
+  console.log(req.query);   // Data sent in URL query ?name=pratik
+  console.log(req.params);  // Data from route parameters /user/:id
+  console.log(req.body);    // Data sent in request body (POST/PUT)
+  console.log(req.headers); // Request headers like Content-Type, Auth tokens
+  res.send('Request received');
+});
+```
