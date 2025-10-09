@@ -21,6 +21,27 @@ But Node.js lets you run JavaScript on your computer/server, so you can build ba
   - Traditional servers like **Apache** handled concurrent requests inefficiently.
   - Node.js was designed for **non-blocking**, event-driven, real-time applications.
 
+### 👾 Features
+1. Open Source
+2. It brings raw JS features in our terminal so that we can actually interact with OS based features.
+
+### ☯️ Runtime Vs Framework
+
+* A *Runtime Environment* provides everything needed to execute code written in a programming language.
+  * It gives the engine + system libraries + environment to make your code actually run.
+
+* A *Framework* is a predefined structure or set of tools that helps you build an application faster and more efficiently.
+  * It provides ready-made architecture, rules, and reusable code patterns.
+
+| Feature        | Runtime                             | Framework                                          |
+| -------------- | ----------------------------------- | -------------------------------------------------- |
+| **Definition** | Environment that executes your code | Predefined structure built on top of a runtime     |
+| **Purpose**    | To run code                         | To simplify app development                        |
+| **Provides**   | Engine + APIs + system access       | Predefined patterns, libraries, rules              |
+| **Control**    | You control the flow                | Framework controls the flow (Inversion of Control) |
+| **Example**    | Node.js, JVM, Python Interpreter    | Express.js, React, Angular, Django                 |
+| **Analogy**    | Vehicle Engine| Vehicle Chassis/Body|
+
 ### **Installing Node.js**
 - Download from [https://nodejs.org](https://nodejs.org)
 - Choose:
@@ -83,11 +104,11 @@ const http = require('http')
 * While installing `cat-me` we used `npm install cat-me` but we're not using any npm packages while running `http`
 
 **Reason**: `http` is a module, not a package.
-#### Server Creation: 
+#### 🛜 Server Creation: 
 ```
 http.createServer()
 ```
-#### Server Start: 
+#### 💡 Server Start: 
 ```
 const server = http.createServer()
 
