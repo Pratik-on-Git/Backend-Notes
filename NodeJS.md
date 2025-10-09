@@ -1,5 +1,5 @@
 # 👨‍💻 Node JS
-### Node.js is a runtime environment that allows you to run JavaScript outside the browser, typically on the server side.
+### Node.js is a Runtime Environment that allows you to run JavaScript outside the browser, typically on the server side.
 
 **📌 In Simple Terms**:
 Normally, JavaScript runs in browsers (like Chrome or Firefox) for things like animations, forms, and interactivity.
@@ -36,6 +36,29 @@ But Node.js lets you run JavaScript on your computer/server, so you can build ba
   - `fs` (file system)
   - `http` (server creation)
   - `path`, etc.
+
+**Node.js removes some browser-only features, and adds new OS-level features that browsers don’t allow for security reasons.**
+
+| Category| Example |
+| -------------------- | --------------- |
+| **DOM Manipulation** | `document`, `window`, `alert()`                                   |
+| **Browser APIs** | `fetch`, `localStorage`, `sessionStorage`, `history`, `navigator` | 
+| **Rendering** | HTML, CSS, Canvas, Audio/Video                                    |
+| **Events** | Mouse/Keyboard events, `addEventListener` on DOM                  | 
+| **Security Sandbox** | Restricted file access                                            |
+
+| Category                      | Example                               | Description                                                     |
+| ----------------------------- | ------------------------------------- | --------------------------------------------------------------- |
+| **File System Access**        | `fs` module                           | Read, write, create, and delete files and directories.          |
+| **Operating System Info**     | `os` module                           | Get system info (CPU, memory, architecture, uptime).            |
+| **Networking**                | `http`, `https`, `net`, `dns` modules | Create web servers, handle requests, and work at network level. |
+| **Process Management**        | `process` object                      | Access environment variables, exit codes, input/output streams. |
+| **Child Processes**           | `child_process` module                | Run shell commands or other programs from Node.js.              |
+| **Modules & Packages**        | `require`, `import`                   | Load built-in, local, or NPM packages.                          |
+| **Streams & Buffers**         | `stream`, `buffer` modules            | Efficiently handle data flow and binary data.                   |
+| **Event-driven Architecture** | `EventEmitter` class                  | Used for handling asynchronous events (like I/O operations).    |
+| **Global Objects**            | `__dirname`, `__filename`, `global`   | Node.js-specific globals not found in browsers.                 |
+
 
 ### 📦 **Packages in Node.js**
 - **Packages** are reusable libraries or tools.
