@@ -276,3 +276,25 @@ So, a REST API is an API that follows REST principles to handle requests and res
 
 * Client → “GET `/users/1`”
 * Server → { "id": 1, "name": "Pratik" }
+
+### 🕸️ Postman API
+Postman is a popular API development and testing tool that helps developers build, test, debug, and document APIs easily - all in one place.
+
+* Postman helps to check if the backend is working correctly.
+
+### ⚙️ What Postman Does
+- Postman gives you a user-friendly interface to:
+- Send requests to an API (e.g., GET, POST, PUT, DELETE)
+- Inspect responses (status codes, response time, headers, data)
+- Debug errors
+- Automate tests
+- Collaborate with teammates on shared API collections
+
+| Feature                   | Description                                                                       |
+| ------------------------- | --------------------------------------------------------------------------------- |
+| **Collections**           | Group of saved API requests (like folders for your projects).                     |
+| **Environment Variables** | Store data (like API keys, URLs) that change between setups (dev, staging, prod). |
+| **Tests & Scripts**       | Write JavaScript-based scripts to test API responses automatically.               |
+| **Monitors**              | Schedule API tests to run automatically at intervals.                             |
+| **Mock Servers**          | Simulate APIs that don’t exist yet for front-end testing.                         |
+| **Documentation**         | Auto-generate and share API documentation.                                        |
