@@ -298,3 +298,17 @@ Postman is a popular API development and testing tool that helps developers buil
 | **Monitors**              | Schedule API tests to run automatically at intervals.                             |
 | **Mock Servers**          | Simulate APIs that don’t exist yet for front-end testing.                         |
 | **Documentation**         | Auto-generate and share API documentation.                                        |
+
+Great question 👇
+
+### `npx nodemon`
+When you run `npx nodemon`
+
+You’re executing the `Nodemon` tool temporarily (without installing it globally) to automatically restart your `Node.js` application whenever you make changes in your source code.
+```
+npx nodemon server.js
+```
+#### npx → a package runner (comes with Node.js and npm).
+* It lets you run a package without installing it globally.
+* It checks if `nodemon` is installed locally in your project (`node_modules`), and if not, temporarily downloads and runs it.
+#### nodemon → a utility that monitors your files for changes.
