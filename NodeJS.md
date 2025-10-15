@@ -257,12 +257,13 @@ So, a REST API is an API that follows REST principles to handle requests and res
 
 #### ⚙️ Key Characteristics:
 * Uses HTTP Methods:
-    * GET → Retrieve data
-    * POST → Create new data
-    * PUT → Update existing data
-  * DELETE → Remove data
+    * GET → Retrieve data from the server.
+    * POST → Create & send new data to the server. [creating new resources]
+    * PATCH → Update existing data on the server.
+  * DELETE → Remove data from the server.
 
 * Each request is independent - the server doesn’t remember previous requests.
+* It defines fixed standards on how requests and responses should be structured.
 * Uses URLs to represent resources:
     * Example:
     
