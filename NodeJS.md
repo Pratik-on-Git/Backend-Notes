@@ -23,7 +23,8 @@ But Node.js lets you run JavaScript on your computer/server, so you can build ba
 
 ### 👾 Features
 1. Open Source
-2. It brings raw JS features in our terminal so that we can actually interact with OS based features.
+2. We'll be able to access file system, timer, can see processes & runtime variables.
+3. It brings raw JS features in our terminal so that we can actually interact with OS based features.
 
 ### ☯️ Runtime Vs Framework
 
@@ -42,11 +43,23 @@ But Node.js lets you run JavaScript on your computer/server, so you can build ba
 | **Example**    | Node.js, JVM, Python Interpreter    | Express.js, React, Angular, Django                 |
 | **Analogy**    | Vehicle Engine| Vehicle Chassis/Body|
 
+### Applications of NodeJS
+* Server Side Applications
+* Desktop Applications.
+* Can build a Library
+
 ### **Installing Node.js**
 - Download from [https://nodejs.org](https://nodejs.org)
 - Choose:
   - **LTS (Long Term Support)**: Stable version recommended for most users.
   - **Current**: Latest features but less stable.
+
+### 🌟 I/O - Input Output Operations
+One of the most expensive operation that happens to our computer system.
+
+#### Implementations of I/O can be of 2 types:
+1. Blocking
+2. Non-Blocking
 
 ### **Running JavaScript Files with Node**
 - Use the terminal/command prompt:
