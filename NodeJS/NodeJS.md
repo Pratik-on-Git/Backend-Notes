@@ -55,7 +55,15 @@ But Node.js lets you run JavaScript on your computer/server, so you can build ba
   - **Current**: Latest features but less stable.
 
 ### 🌟 I/O - Input Output Operations
-One of the most expensive operation that happens to our computer system.
+I/O means Input/Output, which is basically how your computer takes in data (input) and gives back data (output).
+
+**For Example:**
+* Input: You type something in a form, or your app reads data from a file or database.
+* Output: The app shows results on the screen or saves something to a file.
+
+*One of the most expensive operation that happens to our computer system.*
+
+_The type and amount of input given by the user can affect how long it takes for the computer to finish processing and show the output._
 
 #### Implementations of I/O can be of 2 types:
 1. Blocking
