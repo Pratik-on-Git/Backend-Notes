@@ -95,4 +95,3 @@ person2.total_number_of_persons()
 #### Global Variables
 Global variables begin with an $ symbol. While Class variables are not available across different classes, global variables are. Its scope is global, meaning that it can be accessed from anywhere in the program.
 
-Hey!
