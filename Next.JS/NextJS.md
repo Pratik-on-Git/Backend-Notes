@@ -11,19 +11,24 @@ Its main benefit is providing pre-built solutions for common tasks (e.g., Databa
 1. Server-Side Rendering (SSR) and Static Site Generation (SSG)
 2. Improved SEO
 3. Automatic Code Splitting
+4. Image & Font Optimization
+5. Hot Module Replacement
+6. API Routes (Backend)
+7. Built in support for SAAS
+8. CSS Modules
+9. Data Fetching Choice
+10. Error Handling
+11. Metadata API (For SEO)
+12. Internationalization (support for any spoken language)
 
 React JS renders everything on the Client Side sending a minimal HTML from the server. Server sends a minimal HTML & huge JS file to the Client side & then the browser executes them to generate a HTML file. This creates a huge challenge to the search engine crawlers to access & understand the complete content of the page.
 
 On the other hand NextJS Provdides Static Site Generation or Server Side Rendering. Server sends a complete HTML & minimal JS code to the Client side to render only the content required in the client side interaction. This way the search engine crawlers to access & understand the complete content of the page easily.
 
-* Seamless file-based Routing
-* Efficient Code Splitting
-* Image & Font Optimization
-* Hot Module Replacement
-* API Routes (Backend)
-* Built in support for SAAS
-* CSS Modules
-* Data Fetching Choice
-* Error Handling
-* Metadata API (For SEO)
-* Internationalization (support for any spoken language)
+| Feature |	React (Client-Side Rendering) | Next.js (Server-Side Rendering)|
+|---|---|---|
+Initial Payload |	Minimal HTML + Huge JS Bundle |Complete HTML + Minimal JS Bundle|
+Who Renders?|	The User's Browser (Client)	|The Next.js Server|
+SEO	|Poor. Crawler sees an empty page.	|Excellent. Crawler sees a full page.|
+Initial Load Time	|Slow. User sees a blank screen.	|Fast. User sees content immediately.|
+The "Gotcha"	|Once loaded, "in-app" navigation is fast.	|Page becomes interactive after "Hydration."|
