@@ -6,7 +6,7 @@ Normally, JavaScript runs in browsers (like Chrome or Firefox) for things like a
 
 But Node.js lets you run JavaScript on your computer/server, so you can build backend applications like:
 * Servers (e.g., APIs)
-* Command-line tools
+* Command-line tools (CLI)
 * Real-time apps (like chat apps)
 * File systems or databases interaction
 
@@ -61,7 +61,7 @@ I/O means Input/Output, which is basically how your computer takes in data (inpu
 * Input: You type something in a form, or your app reads data from a file or database.
 * Output: The app shows results on the screen or saves something to a file.
 
-*One of the most expensive operation that happens to our computer system.*
+*It's one of the most expensive operation that happens to our computer system.*
 
 _The type and amount of input given by the user can affect how long it takes for the computer to finish processing and show the output._
 
