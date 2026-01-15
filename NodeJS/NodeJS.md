@@ -1,8 +1,3 @@
-### 👾 Features
-1. Open Source
-2. We'll be able to access file system, timer, can see processes & runtime variables.
-3. It brings raw JS features in our terminal so that we can actually interact with OS based features.
-
 ### ☯️ Runtime Vs Framework
 
 * A *Runtime Environment* provides everything needed to execute code written in a programming language.

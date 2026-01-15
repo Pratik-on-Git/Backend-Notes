@@ -22,7 +22,12 @@ But **Node.js** lets you run JavaScript on your computer/server, so you can buil
   - Traditional servers like **Apache** handled concurrent requests inefficiently.
   - Node.js was designed for **non-blocking**, event-driven, real-time applications.
 
-### Runtime Environment
+### 👾 Features
+1. Open Source
+2. We'll be able to access file system, timer, can see processes & runtime variables.
+3. It brings raw JS features in our terminal so that we can actually interact with OS based features.
+
+### 🏃‍♀️‍➡️ Runtime Environment
 A *Runtime Environment* is software that *supplies the additional ecosystem and services* a programming language needs - beyond what it inherently provides - to execute programs and extend the language’s functionality.
 
 JS is a programming language & the Runtime Environment provides extra capabilities to JavaScript like:
@@ -31,4 +36,8 @@ JS is a programming language & the Runtime Environment provides extra capabiliti
 - Event Loop
 - setTimeout, setInterval (access timers) etc.
 
-Simple Runtime Environment = JavaScript + Browser (Provides APIs like timers, reading & modifying HTML elements, etc.)
+> A *Runtime Environment* provides everything needed to execute code written in a programming language.
+> * It gives the engine + system libraries + environment to make your code actually run.
+
+Simple Runtime Environment Example = JavaScript + Browser (Provides APIs like timers, reading & modifying HTML elements, etc.)
+
