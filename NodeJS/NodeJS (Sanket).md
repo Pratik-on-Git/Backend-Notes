@@ -35,9 +35,16 @@ JS is a programming language & the Runtime Environment provides extra capabiliti
 - BOM (Browser Object Model)
 - Event Loop
 - setTimeout, setInterval (access timers) etc.
+- networking capabilities
 
 > A *Runtime Environment* provides everything needed to execute code written in a programming language.
 > * It gives the engine + system libraries + environment to make your code actually run.
 
 Simple Runtime Environment Example = JavaScript + Browser (Provides APIs like timers, reading & modifying HTML elements, etc.)
 
+### *Ryan Dahl created Node.js* & chose *V8 Engine from Chrome* to power Node.js. 
+Through this new runtime environment, he was able to access OS features like *read/write files from file system, access processes running on the system, access runtime variables, access timers, both side networking etc.*
+
+He also added a new feature called **Event Loop** which allowed Node.js to handle multiple requests at the same time.
+
+> *Event Loop* is a core concept in Node.js that handles the **execution of asynchronous operations**. It allows Node.js to perform non-blocking operations, such as file I/O, network requests, and timers, without blocking the main thread.
